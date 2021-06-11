@@ -1,0 +1,55 @@
+h1 {
+
+    font-size: 5em;
+}
+
+.maincontainer {
+    display: flex;
+    margin: auto;
+    flex-wrap: nowrap;
+}
+  
+.secdiv {
+    font-size: 2em;
+    background-color: lightgray;
+    margin: 0.5em auto;
+    border: 1px solid black;
+    width: 30%;
+}
+
+span {
+    border: 1px solid black;
+    padding: 0px 2px;
+    background-color: white;
+    float: right;
+}
+
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .maincontainer {
+        flex-wrap: wrap;
+    }
+
+    .secdiv {
+        width: 40%;
+    }
+
+    #lastitem {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .maincontainer {
+        flex-wrap: wrap;
+    }
+
+    .secdiv {
+        width: 80%;
+    }    
+}
